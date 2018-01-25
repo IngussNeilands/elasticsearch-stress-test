@@ -269,7 +269,7 @@ def generate_indices(es):
     # Iterate over the indices count
     for _ in range(NUMBER_OF_INDICES):
         # Generate the index name
-        temp_index = generate_random_string(16)
+        temp_index = "stress-test-%s" % generate_random_string(16)
 
         # Push it to the list
         temp_indices.append(temp_index)
